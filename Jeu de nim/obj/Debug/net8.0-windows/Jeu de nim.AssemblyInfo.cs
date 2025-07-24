@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Jeu de nim")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f18762022145c910dfdd314b5ce119bfe137ce1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34da9e91c6ebff8a648cd6629136cd701ab9ac10")]
 [assembly: System.Reflection.AssemblyProductAttribute("Jeu de nim")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Jeu de nim")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

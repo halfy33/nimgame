@@ -30,9 +30,9 @@ namespace Jeu_de_nim
                 return;
             }
 
-            using (var db = new NimGameEnzoYanisContext())
+            using (NimGameEnzoYanisContext db = new NimGameEnzoYanisContext())
             {
-                var utilisateur = db.Joueurs
+                Joueur? utilisateur = db.Joueurs
                     .FirstOrDefault(j => j.Login == login && j.MotDePasse == motDePasse);
 
                 if (utilisateur == null)

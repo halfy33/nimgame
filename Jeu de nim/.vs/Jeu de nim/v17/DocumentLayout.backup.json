@@ -3,27 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\yanis\\Desktop\\Jeu de Nim\\Jeu de nim\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|c:\\users\\yanis\\desktop\\jeu de nim\\jeu de nim\\models\\nimgameenzoyaniscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|solutionrelative:models\\nimgameenzoyaniscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|c:\\users\\yanis\\desktop\\jeu de nim\\jeu de nim\\formconnexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|solutionrelative:formconnexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|c:\\users\\yanis\\desktop\\jeu de nim\\jeu de nim\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|c:\\users\\yanis\\desktop\\jeu de nim\\jeu de nim\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|C:\\Users\\yanis\\Desktop\\Jeu de Nim\\Jeu de nim\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|c:\\users\\yanis\\desktop\\jeu de nim\\jeu de nim\\formconnexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|C:\\Users\\yanis\\Desktop\\Jeu de Nim\\Jeu de nim\\formconnexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|solutionrelative:formconnexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|c:\\users\\yanis\\desktop\\jeu de nim\\jeu de nim\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|C:\\Users\\yanis\\Desktop\\Jeu de Nim\\Jeu de nim\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|solutionrelative:formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|c:\\users\\yanis\\desktop\\jeu de nim\\jeu de nim\\fromhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|C:\\Users\\yanis\\Desktop\\Jeu de Nim\\Jeu de nim\\fromhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0C03AE0-4C43-4114-A63A-C378386D8B60}|Jeu de nim.csproj|solutionrelative:fromhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -34,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormConnexion.cs",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\Jeu de Nim\\Jeu de nim\\FormConnexion.cs",
+              "RelativeDocumentMoniker": "FormConnexion.cs",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\Jeu de Nim\\Jeu de nim\\FormConnexion.cs",
+              "RelativeToolTip": "FormConnexion.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T12:10:30.68Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -44,22 +57,9 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\yanis\\Desktop\\Jeu de Nim\\Jeu de nim\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAIAwwDEAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAASwA8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-24T12:02:54.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NimGameEnzoYanisContext.cs",
-              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\Jeu de Nim\\Jeu de nim\\Models\\NimGameEnzoYanisContext.cs",
-              "RelativeDocumentMoniker": "Models\\NimGameEnzoYanisContext.cs",
-              "ToolTip": "C:\\Users\\yanis\\Desktop\\Jeu de Nim\\Jeu de nim\\Models\\NimGameEnzoYanisContext.cs",
-              "RelativeToolTip": "Models\\NimGameEnzoYanisContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T12:00:20.198Z",
               "EditorCaption": ""
             },
             {

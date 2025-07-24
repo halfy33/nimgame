@@ -89,7 +89,7 @@
             Controls.Add(btn_join);
             Controls.Add(btn_create);
             Name = "FromHome";
-            Text = "FromHome";
+            Text = "FormHome";
             ResumeLayout(false);
             PerformLayout();
         }
