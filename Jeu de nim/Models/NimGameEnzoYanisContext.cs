@@ -21,7 +21,7 @@ public partial class NimGameEnzoYanisContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=2a03:5840:111:1024:143:e6a5:7dbe:31b3;Database=NimGameEnzoYanis;User ID=sa;Password=erty64%;TrustServerCertificate=True;");
+        => optionsBuilder.UseSqlServer("Server=2a03:5840:111:1024:143:e6a5:7dbe:31b3;Database=NimGameEnzoYanis;User Id=sa;Password=erty64%;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -65,10 +65,7 @@ public partial class NimGameEnzoYanisContext : DbContext
 
             entity.ToTable("Partie");
 
-            entity.Property(e => e.IdPartie)
-                .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("idPartie");
+            entity.Property(e => e.IdPartie).HasColumnName("idPartie");
             entity.Property(e => e.BatonsRestants).HasColumnName("batonsRestants");
             entity.Property(e => e.DateCreation)
                 .HasColumnType("datetime")

@@ -16,6 +16,7 @@ namespace Jeu_de_nim
         public FormConnexion()
         {
             InitializeComponent();
+            
         }
 
         private void btn_Connexion_Click(object sender, EventArgs e)

@@ -39,6 +39,9 @@
             lbl_tourjoueur = new Label();
             label7 = new Label();
             lbl_time = new Label();
+            label3 = new Label();
+            label6 = new Label();
+            label8 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -141,11 +144,40 @@
             lbl_time.TabIndex = 10;
             lbl_time.Text = "1:30";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(456, 159);
+            label3.Name = "label3";
+            label3.Size = new Size(101, 20);
+            label3.TabIndex = 11;
+            label3.Text = "Temps joueur:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(547, 159);
+            label6.Name = "label6";
+            label6.Size = new Size(0, 20);
+            label6.TabIndex = 12;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(564, 159);
+            label8.Name = "label8";
+            label8.Size = new Size(50, 20);
+            label8.TabIndex = 13;
+            label8.Text = "label8";
+            // 
             // FormGame
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(622, 301);
+            Controls.Add(label8);
+            Controls.Add(label6);
+            Controls.Add(label3);
             Controls.Add(lbl_time);
             Controls.Add(label7);
             Controls.Add(lbl_tourjoueur);
@@ -176,5 +208,8 @@
         private Label lbl_tourjoueur;
         private Label label7;
         private Label lbl_time;
+        private Label label3;
+        private Label label6;
+        private Label label8;
     }
 }

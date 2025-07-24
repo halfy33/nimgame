@@ -5,7 +5,7 @@ namespace Jeu_de_nim.Models;
 
 public partial class Partie
 {
-    public string IdPartie { get; set; } = null!;
+    public int IdPartie { get; set; }
 
     public int BatonsRestants { get; set; }
 

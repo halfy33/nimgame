@@ -43,6 +43,7 @@
             btn_create.TabIndex = 0;
             btn_create.Text = "Créer une partie";
             btn_create.UseVisualStyleBackColor = true;
+            btn_create.Click += btn_create_Click;
             // 
             // btn_join
             // 
@@ -77,6 +78,7 @@
             btn_homeGo.TabIndex = 4;
             btn_homeGo.Text = "GO! ";
             btn_homeGo.UseVisualStyleBackColor = true;
+            btn_homeGo.Click += btn_homeGo_Click;
             // 
             // FromHome
             // 
