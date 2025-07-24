@@ -9,6 +9,7 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Timer = System.Windows.Forms.Timer;
 
 namespace Jeu_de_nim
 {
@@ -18,7 +19,9 @@ namespace Jeu_de_nim
     {
         private Joueur joueurConnecte;  
         private int joueur_id;
-        
+        private Timer attenteJoueur2Timer;
+        private int idPartieEnAttente;
+
 
 
         public FromHome(Joueur utilisateur)
@@ -45,7 +48,33 @@ namespace Jeu_de_nim
                 db.Parties.Add(nouvellePartie);
                 db.SaveChanges();
 
-                MessageBox.Show($"Partie {nouvellePartie.IdPartie} créée. En attente d'un joueur 2 !");
+                idPartieEnAttente = nouvellePartie.IdPartie;
+
+                attenteJoueur2Timer = new Timer();
+                attenteJoueur2Timer.Interval = 2000; // toutes les 2 secondes
+                attenteJoueur2Timer.Tick += AttenteJoueur2Timer_Tick;
+                attenteJoueur2Timer.Start();
+
+                MessageBox.Show($"Partie {idPartieEnAttente} créée. En attente d'un joueur 2...");
+            }
+        }
+
+        private void AttenteJoueur2Timer_Tick(object sender, EventArgs e)
+        {
+            using (var db = new NimGameEnzoYanisContext())
+            {
+                var partie = db.Parties.FirstOrDefault(p => p.IdPartie == idPartieEnAttente);
+
+                if (partie != null && partie.IdJoueur2 != null)
+                {
+                    attenteJoueur2Timer.Stop();
+
+                    MessageBox.Show("Un joueur a rejoint la partie ! Le jeu commence.");
+                    FormGame game = new FormGame(joueurConnecte, partie);
+                    this.Hide();
+                    game.ShowDialog();
+                    this.Close();
+                }
             }
         }
 

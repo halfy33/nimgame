@@ -28,4 +28,6 @@ public partial class Joueur
     public virtual ICollection<Partie> PartieIdJoueurGagnantNavigations { get; set; } = new List<Partie>();
 
     public virtual ICollection<Partie> PartieIdJoueurPerdantNavigations { get; set; } = new List<Partie>();
+
+    public virtual ICollection<Partie> PartieIdJoueurTourNavigations { get; set; } = new List<Partie>();
 }

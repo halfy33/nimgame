@@ -25,6 +25,8 @@ public partial class Partie
 
     public int? IdJoueur2 { get; set; }
 
+    public int? IdJoueurTour { get; set; }
+
     public virtual Joueur IdJoueur1Navigation { get; set; } = null!;
 
     public virtual Joueur? IdJoueur2Navigation { get; set; }
@@ -32,4 +34,6 @@ public partial class Partie
     public virtual Joueur? IdJoueurGagnantNavigation { get; set; }
 
     public virtual Joueur? IdJoueurPerdantNavigation { get; set; }
+
+    public virtual Joueur? IdJoueurTourNavigation { get; set; }
 }

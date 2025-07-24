@@ -15,6 +15,8 @@ public partial class NimGameEnzoYanisContext : DbContext
     {
     }
 
+    public virtual DbSet<Coup> Coups { get; set; }
+
     public virtual DbSet<Joueur> Joueurs { get; set; }
 
     public virtual DbSet<Partie> Parties { get; set; }
@@ -25,6 +27,15 @@ public partial class NimGameEnzoYanisContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Coup>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Coup__3214EC07940F94F9");
+
+            entity.ToTable("Coup");
+
+            entity.Property(e => e.Date).HasColumnType("datetime");
+        });
+
         modelBuilder.Entity<Joueur>(entity =>
         {
             entity.HasKey(e => e.IdJoueur).HasName("PK__Joueur__64E2661B05DF458E");
@@ -80,6 +91,7 @@ public partial class NimGameEnzoYanisContext : DbContext
             entity.Property(e => e.IdJoueur2).HasColumnName("idJoueur2");
             entity.Property(e => e.IdJoueurGagnant).HasColumnName("idJoueurGagnant");
             entity.Property(e => e.IdJoueurPerdant).HasColumnName("idJoueurPerdant");
+            entity.Property(e => e.IdJoueurTour).HasColumnName("idJoueurTour");
 
             entity.HasOne(d => d.IdJoueur1Navigation).WithMany(p => p.PartieIdJoueur1Navigations)
                 .HasForeignKey(d => d.IdJoueur1)
@@ -97,6 +109,10 @@ public partial class NimGameEnzoYanisContext : DbContext
             entity.HasOne(d => d.IdJoueurPerdantNavigation).WithMany(p => p.PartieIdJoueurPerdantNavigations)
                 .HasForeignKey(d => d.IdJoueurPerdant)
                 .HasConstraintName("FK__Partie__idJoueur__267ABA7A");
+
+            entity.HasOne(d => d.IdJoueurTourNavigation).WithMany(p => p.PartieIdJoueurTourNavigations)
+                .HasForeignKey(d => d.IdJoueurTour)
+                .HasConstraintName("FK_Partie_idJoueurTour");
         });
 
         OnModelCreatingPartial(modelBuilder);
